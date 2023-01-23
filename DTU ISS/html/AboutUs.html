@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/css/global.css">
     <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/b77056289c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>  
 </head>
 
 <body>
@@ -25,7 +27,9 @@
 
                 <!--The changes were made from here-->
                 <div class="drop">
-                    <li class="item"><a href="#"><h4 class="active">About</h4></a>
+                    <li class="item"><a href="#">
+                            <h4 class="active">About</h4>
+                        </a>
 
                         <div class="dropdown_menu">
                             <ul>
@@ -107,76 +111,236 @@
             </div>
 
         </div>
-        
+
         <div id="small-box">
             <div class="çontent-box">
-                <p class="box-text"> Our Pioniers</p>
-                <p class="box-text"> Founding Executives</p>
-                <p class="box-text"> Founding Faculty Advisers</p>
+                <p id="one" class="box-text"> Our Pioniers</p>
+                <p id="two" class="box-text1"> Founding Executives</p>
+                <p id="three" class="box-text"> Founding Faculty Advisers</p>
             </div>
         </div>
 
-        <div id="cards-box" class="scroll-h">
-            <a href="profile_page.html">
-                <div class="executive_members">
-                    <div class="prof_">
-                        <img src="/images/pic_2.jpg" alt="our history" class="prof_pic">
-                        <h2 style="text-align:center ; color: #000000;">Murilo Joaquim</h2>
-                        <p style="text-align:center ; padding-top: 10px;" >Head Designer</p>
-                        <div class="social_m">
-                            <a href="#" class="padding_icon fa fa-twitter-square"></a>
-                            <a href="#" class="padding_icon fa fa-instagram"></a>
-                            <a href="#" class="padding_icon fa fa-linkedin-square"></a>
-                        </div>
-                    </div>
-                </div>
-            </a>
+        <script>
+        const leftBtn = document.querySelector('#one');
+        const rightBtn = document.querySelector('#two');
+        const rightBtn1 = document.querySelector('#three');
 
-            <a href="profile_page.html">
-                <div class="executive_members">
-                    <div class="prof_">
-                        <img src="/images/pic_2.jpg" alt="our history" class="prof_pic">
-                        <h2 style="text-align:center ; color: #000000;">Murilo Joaquim</h2>
-                        <p style="text-align:center ; padding-top: 10px;" >Head Designer</p>
-                        <div class="social_m">
-                            <a href="#" class="padding_icon fa fa-twitter-square"></a>
-                            <a href="#" class="padding_icon fa fa-instagram"></a>
-                            <a href="#" class="padding_icon fa fa-linkedin-square"></a>
-                        </div>
-                    </div>
-                </div>
-            </a>
+rightBtn.addEventListener("click", function(event) {
+  const conent = document.querySelector('#show');
+  conent.scrollLeft += 1400;
+  event.preventDefault();
+});
 
-            <a href="profile_page.html">
-                <div class="executive_members">
-                    <div class="prof_">
-                        <img src="/images/pic_2.jpg" alt="our history" class="prof_pic">
-                        <h2 style="text-align:center ; color: #000000;">Murilo Joaquim</h2>
-                        <p style="text-align:center ; padding-top: 10px;" >Head Designer</p>
-                        <div class="social_m">
-                            <a href="#" class="padding_icon fa fa-twitter-square"></a>
-                            <a href="#" class="padding_icon fa fa-instagram"></a>
-                            <a href="#" class="padding_icon fa fa-linkedin-square"></a>
-                        </div>
-                    </div>
-                </div>
-            </a>
+rightBtn1.addEventListener("click", function(event) {
+  const conent = document.querySelector('#show');
+  conent.scrollLeft += 1800;
+  event.preventDefault();
+});
 
-            <a href="profile_page.html">
-                <div class="executive_members">
-                    <div class="prof_">
-                        <img src="/images/pic_2.jpg" alt="our history" class="prof_pic">
-                        <h2 style="text-align:center ; color: #000000;">Murilo Joaquim</h2>
-                        <p style="text-align:center ; padding-top: 10px;" >Head Designer</p>
-                        <div class="social_m">
-                            <a href="#" class="padding_icon fa fa-twitter-square"></a>
-                            <a href="#" class="padding_icon fa fa-instagram"></a>
-                            <a href="#" class="padding_icon fa fa-linkedin-square"></a>
+leftBtn.addEventListener("click", function(event) {
+  const conent = document.querySelector('#show');
+  conent.scrollLeft -= 3000;
+  event.preventDefault();
+});
+
+
+
+
+
+        </script>
+        <div id="show" class="scroll-h">
+            <div id="cards-box">
+                <a href="profile_page.html">
+                    <div class="executive_members">
+                        <div class="prof_">
+                            <img src="/images/pic_2.jpg" alt="our history" class="prof_pic">
+                            <h2 style="text-align:center ; color: #000000;">Murilo Joaquim</h2>
+                            <p style="text-align:center ; padding-top: 10px;">Head Designer</p>
+                            <div class="social_m">
+                                <a href="#" class="padding_icon fa fa-twitter-square"></a>
+                                <a href="#" class="padding_icon fa fa-instagram"></a>
+                                <a href="#" class="padding_icon fa fa-linkedin-square"></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+
+                <a href="profile_page.html">
+                    <div class="executive_members">
+                        <div class="prof_">
+                            <img src="/images/pic_2.jpg" alt="our history" class="prof_pic">
+                            <h2 style="text-align:center ; color: #000000;">Murilo Joaquim</h2>
+                            <p style="text-align:center ; padding-top: 10px;">Head Designer</p>
+                            <div class="social_m">
+                                <a href="#" class="padding_icon fa fa-twitter-square"></a>
+                                <a href="#" class="padding_icon fa fa-instagram"></a>
+                                <a href="#" class="padding_icon fa fa-linkedin-square"></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="profile_page.html">
+                    <div class="executive_members">
+                        <div class="prof_">
+                            <img src="/images/pic_2.jpg" alt="our history" class="prof_pic">
+                            <h2 style="text-align:center ; color: #000000;">Murilo Joaquim</h2>
+                            <p style="text-align:center ; padding-top: 10px;">Head Designer</p>
+                            <div class="social_m">
+                                <a href="#" class="padding_icon fa fa-twitter-square"></a>
+                                <a href="#" class="padding_icon fa fa-instagram"></a>
+                                <a href="#" class="padding_icon fa fa-linkedin-square"></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="profile_page.html">
+                    <div class="executive_members">
+                        <div class="prof_">
+                            <img src="/images/pic_2.jpg" alt="our history" class="prof_pic">
+                            <h2 style="text-align:center ; color: #000000;">Murilo Joaquim</h2>
+                            <p style="text-align:center ; padding-top: 10px;">Head Designer</p>
+                            <div class="social_m">
+                                <a href="#" class="padding_icon fa fa-twitter-square"></a>
+                                <a href="#" class="padding_icon fa fa-instagram"></a>
+                                <a href="#" class="padding_icon fa fa-linkedin-square"></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        
+
+
+        
+            <div id="cards-box" >
+                <a href="profile_page.html">
+                    <div class="executive_members">
+                        <div class="prof_">
+                            <img src="/images/pic_6.jpg" alt="our history" class="prof_pic">
+                            <h2 style="text-align:center ; color: #000000;">Murilo Joaquim</h2>
+                            <p style="text-align:center ; padding-top: 10px;">Head Designer</p>
+                            <div class="social_m">
+                                <a href="#" class="padding_icon fa fa-twitter-square"></a>
+                                <a href="#" class="padding_icon fa fa-instagram"></a>
+                                <a href="#" class="padding_icon fa fa-linkedin-square"></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="profile_page.html">
+                    <div class="executive_members">
+                        <div class="prof_">
+                            <img src="/images/pic_6.jpg" alt="our history" class="prof_pic">
+                            <h2 style="text-align:center ; color: #000000;">Murilo Joaquim</h2>
+                            <p style="text-align:center ; padding-top: 10px;">Head Designer</p>
+                            <div class="social_m">
+                                <a href="#" class="padding_icon fa fa-twitter-square"></a>
+                                <a href="#" class="padding_icon fa fa-instagram"></a>
+                                <a href="#" class="padding_icon fa fa-linkedin-square"></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="profile_page.html">
+                    <div class="executive_members">
+                        <div class="prof_">
+                            <img src="/images/pic_6.jpg" alt="our history" class="prof_pic">
+                            <h2 style="text-align:center ; color: #000000;">Murilo Joaquim</h2>
+                            <p style="text-align:center ; padding-top: 10px;">Head Designer</p>
+                            <div class="social_m">
+                                <a href="#" class="padding_icon fa fa-twitter-square"></a>
+                                <a href="#" class="padding_icon fa fa-instagram"></a>
+                                <a href="#" class="padding_icon fa fa-linkedin-square"></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="profile_page.html">
+                    <div class="executive_members">
+                        <div class="prof_">
+                            <img src="/images/naitve.png" alt="our history" class="prof_pic">
+                            <h2 style="text-align:center ; color: #000000;">Murilo Joaquim</h2>
+                            <p style="text-align:center ; padding-top: 10px;">Head Designer</p>
+                            <div class="social_m">
+                                <a href="#" class="padding_icon fa fa-twitter-square"></a>
+                                <a href="#" class="padding_icon fa fa-instagram"></a>
+                                <a href="#" class="padding_icon fa fa-linkedin-square"></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+       
+
+            <div id="cards-box" >
+                <a href="profile_page.html">
+                    <div class="executive_members">
+                        <div class="prof_">
+                            <img src="/images/pic_4.jpg" alt="our history" class="prof_pic">
+                            <h2 style="text-align:center ; color: #000000;">Murilo Joaquim</h2>
+                            <p style="text-align:center ; padding-top: 10px;">Head Designer</p>
+                            <div class="social_m">
+                                <a href="#" class="padding_icon fa fa-twitter-square"></a>
+                                <a href="#" class="padding_icon fa fa-instagram"></a>
+                                <a href="#" class="padding_icon fa fa-linkedin-square"></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="profile_page.html">
+                    <div class="executive_members">
+                        <div class="prof_">
+                            <img src="/images/pic_4.jpg" alt="our history" class="prof_pic">
+                            <h2 style="text-align:center ; color: #000000;">Murilo Joaquim</h2>
+                            <p style="text-align:center ; padding-top: 10px;">Head Designer</p>
+                            <div class="social_m">
+                                <a href="#" class="padding_icon fa fa-twitter-square"></a>
+                                <a href="#" class="padding_icon fa fa-instagram"></a>
+                                <a href="#" class="padding_icon fa fa-linkedin-square"></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="profile_page.html">
+                    <div class="executive_members">
+                        <div class="prof_">
+                            <img src="/images/pic_4.jpg" alt="our history" class="prof_pic">
+                            <h2 style="text-align:center ; color: #000000;">Murilo Joaquim</h2>
+                            <p style="text-align:center ; padding-top: 10px;">Head Designer</p>
+                            <div class="social_m">
+                                <a href="#" class="padding_icon fa fa-twitter-square"></a>
+                                <a href="#" class="padding_icon fa fa-instagram"></a>
+                                <a href="#" class="padding_icon fa fa-linkedin-square"></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="profile_page.html">
+                    <div class="executive_members">
+                        <div class="prof_">
+                            <img src="/images/pic_4.jpg" alt="our history" class="prof_pic">
+                            <h2 style="text-align:center ; color: #000000;">Murilo Joaquim</h2>
+                            <p style="text-align:center ; padding-top: 10px;">Head Designer</p>
+                            <div class="social_m">
+                                <a href="#" class="padding_icon fa fa-twitter-square"></a>
+                                <a href="#" class="padding_icon fa fa-instagram"></a>
+                                <a href="#" class="padding_icon fa fa-linkedin-square"></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
+
+        
     </main>
     <footer>
         <div class="footer-container">
